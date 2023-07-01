@@ -1,8 +1,10 @@
-# Tailwind Benchmark Nr. 2
+# Tailwind Benchmark No. 2
 
 ## What this is about
 
-This benchmark evaluates the marketing claim that Tailwind produces smaller builds. I already did [another benchmark](https://github.com/ScriptRaccoon/tailwind-benchmark) before which deals with a basic landing page. This time, it is just an HTML page with the same card, copied 100 times. This does not happen in practice, but when the same card is used over multiple pages, 100 times in total, the results will be similar.
+This benchmark evaluates the marketing claim that Tailwind produces smaller builds.
+
+I already did [another benchmark](https://github.com/ScriptRaccoon/tailwind-benchmark) before which deals with a basic landing page. This time, it is just an HTML page with the same card, copied 100 times. This does not happen in practice, but when the same card is used over multiple pages, 100 times in total, the results will be similar.
 
 The CSS version is found in the subfolder `CSS`. The Tailwind version is found in the subfolder `Tailwind`. For better comparison, the (quite big) Tailwind CSS reset was replaced with the same, more simple one, used in the CSS version.
 
@@ -32,7 +34,7 @@ This can be seen very clearly in this repository. In Tailwind's HTML file, the c
 
 `bg-white max-w-xs mx-auto p-4 my-4 rounded-lg`
 
-is repeated 100 times, which is of course more data then
+is repeated 100 times, which is of course more data than
 
 `card`
 
@@ -40,4 +42,4 @@ is repeated 100 times, which is of course more data then
 
 The CSS file is also larger. This is partly because of the internal opacity variables which are not necessary here. But even when they are removed manually, the CSS file is  416 bytes, so **67%** larger than the Vanilla CSS file.
 
-Of course, these little bytes do not make any difference. But when an application grows and the relation stays the same (this needs to be tested!), the difference is quite remarkable.
+Of course, these little bytes do not make any difference. But when an application grows and the relation stays the same (this needs to be tested!), the difference will be quite remarkable.
