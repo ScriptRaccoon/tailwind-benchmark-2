@@ -42,8 +42,10 @@ is repeated 100 times, which is of course more data than
 
 The CSS file is also larger. This is partly because of the internal opacity variables which are not necessary here. But even when they are removed manually, the CSS file is 416 bytes, so **67%** larger than the Vanilla CSS file.
 
-Of course, these little bytes do not make any difference. But when an application grows and the relation stays the same (this needs to be tested!), the difference will be quite remarkable.
+Of course, these little bytes do not make any difference. But when an application grows and the relation stays the same (this needs to be tested\*), the difference could be quite remarkable. See [this benchmark](https://github.com/TGlide/tailwind-benchmark) by Thomas G. Lopes with more data, where Tailwind's bundle size is indeed smaller.
 
 ## Next benchmark
 
 https://github.com/ScriptRaccoon/tailwind-benchmark-3
+
+\*See [this benchmark](https://github.com/TGlide/tailwind-benchmark) by Thomas G. Lopes with more data, where Tailwind's bundle size is indeed smaller.
